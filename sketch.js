@@ -7,11 +7,11 @@ var allPlayers;
 var player, form,game;
 var player1,player2;
 var players;
-var fruits;
+var fruits, rfruits;
 var fruitGroup,rottenGroup,bomb;
 var fruit1_img, fruit2_img, fruit3_img, fruit4_img, fruit5_img;
 var player_img;
-var rotten1, rotten2, rotten3, rotten4, bomb_img;
+var rotten1, rotten2, rotten3, rotten4, bomb_img, bombGroup;
 
 
 function preload(){
@@ -26,10 +26,11 @@ function preload(){
   rotten2= loadImage("images/rorange.png");
   rotten3= loadImage("images/rbanana.png");
   rotten4= loadImage("images/rmelon.png");
+  rotten5= loadImage("images/rpineapple.jpg");
   bomb_img = loadImage("images/bomb.png");
   fruitGroup = new Group();
   rottenGroup = new Group();
-
+  bombGroup = new Group();
 }
 function setup() {
   createCanvas(1000,600);
